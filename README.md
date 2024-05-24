@@ -40,7 +40,7 @@
 
     - Replace `train_log_directory` with the actual name of the directory where your log files are stored.
 
-### Recoding you own dataset
+### Recording your own dataset
 
    - If you want to add your own dataset, you can read this documentation here [coming soon]()
 
