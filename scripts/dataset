@@ -1,0 +1,13 @@
+#!/bin/bash
+
+DATASET_URL="https://www.kaggle.com/datasets/jirenmaa/asl-3a-npy/download"
+ZIP_FILE="asl-3a-npy.zip"
+
+# download the dataset using Kaggle API
+kaggle datasets download -d jirenmaa/asl-3a-npy -p .
+
+# extract the downloaded zip file to the parent directory
+unzip -o "$ZIP_FILE" -d ./
+
+# remove the zip file after extraction
+rm "$ZIP_FILE"
