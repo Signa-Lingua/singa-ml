@@ -1,4 +1,6 @@
 venv/
+.vscode/
 
 drive/
 logs/
+datasets/
