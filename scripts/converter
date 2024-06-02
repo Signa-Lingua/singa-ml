@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# ensure the script stops on first error
+set -e
+
+# check if the model path argument is provided
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 <model_file_path>"
+    exit 1
+fi
+
+# get the model file path from the argument
+MODEL_PATH=$1
+
+CONVERTER_SCRIPT="./notebooks/utils/keras_to_tflite_converter.py"
+
+# Run the Python script to convert the model
+py ${CONVERTER_SCRIPT} "${MODEL_PATH}"
