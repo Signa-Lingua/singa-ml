@@ -1,0 +1,13 @@
+#!/bin/bash
+
+DATASET_URL="https://www.kaggle.com/datasets/johnwilkench/slr-mediapipe-singa-npy"
+ZIP_FILE="slr-mediapipe-singa-npy.zip"
+
+# download the dataset using Kaggle API
+kaggle datasets download -d jirenmaa/slr-mediapipe-singa-npy -p .
+
+# extract the downloaded zip file to the parent directory
+unzip -o "$ZIP_FILE" -d ./
+
+# remove the zip file after extraction
+rm "$ZIP_FILE"

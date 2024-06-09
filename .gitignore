@@ -1,0 +1,7 @@
+venv/
+.vscode/
+
+drive/
+logs/
+datasets/
+notebooks/tests/videos/

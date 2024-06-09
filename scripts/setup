@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# get the absolute path of the directory where the script is located
+script_dir=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
+
+# define the name of the virtual environment
+venv_name="venv"
+
+# create the virtual environment using 'python' command
+if py -m venv "$venv_name"; then
+    echo "Virtual environment '$venv_name' created successfully."
+else
+    echo "Failed to create virtual environment '$venv_name'."
+fi
