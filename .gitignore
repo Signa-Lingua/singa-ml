@@ -1,7 +1,6 @@
 venv/
 .vscode/
 
-drive/
-logs/
-datasets/
+storage/
 notebooks/tests/videos/
+notebooks/data/
