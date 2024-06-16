@@ -2,13 +2,13 @@ import os
 import argparse
 
 
-def bulk_rename_files(folder_path):
+def bulk_rename_files(folder_path, start_number):
     folder_path = f"./storage/datasets/raw/{folder_path}"
 
     for filename in os.listdir(folder_path):
         file_number = int(filename.split(".")[0])
 
-        new_number = file_number + 60
+        new_number = file_number + int(start_number)
 
         new_filename = f"{new_number}.avi"
 
@@ -25,6 +25,9 @@ parser = argparse.ArgumentParser()
 parser.add_argument(
     "folder", type=str, help="The path to the folder containing files to be renamed"
 )
+parser.add_argument(
+    "start", type=str, help="Start renaming the file from"
+)
 args = parser.parse_args()
 
-bulk_rename_files(args.folder)
+bulk_rename_files(args.folder, args.start)
