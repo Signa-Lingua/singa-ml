@@ -34,7 +34,7 @@ Singa is a project focused on sign language recognition using deep learning tech
   ./script/dataset
   ```
 
-- Additionally, we have another dataset available, which is not processed into one file [`dataset-cleaned`](https://www.kaggle.com/datasets/jirenmaa/asl-npy-20-action-60fps-225feature-cleaned). For the cleaned
+- Additionally, we have another dataset available, which is not processed into one file [`dataset-cleaned`](https://www.kaggle.com/datasets/jirenmaa/asl-npy-20-action-60fps-225feature-cleaned).
 
   #### Additional Dataset Information
     - Both datasets consist of 20 labels.
