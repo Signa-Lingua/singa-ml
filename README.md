@@ -34,6 +34,15 @@ Singa is a project focused on sign language recognition using deep learning tech
   ./script/dataset
   ```
 
+- Additionally, we have another dataset available, which is not processed into one file [`dataset-cleaned`](https://www.kaggle.com/datasets/jirenmaa/asl-npy-20-action-60fps-225feature-cleaned). For the cleaned
+
+  #### Additional Dataset Information
+    - Both datasets consist of 20 labels.
+    - Each label has a total of 120 videos, resulting in 2400 videos in total.
+    - Since both datasets have already been augmented (flipped only), the total number of `.npy` files is 4800
+
+  If you need access to the raw (video) dataset, you can request it via my email: [ahmadalwiam@gmail.com](mailto:ahmadalwiam@gmail.com)
+
 ### Running TensorBoard
 
 - Use the following command to start TensorBoard and visualize the training logs.
