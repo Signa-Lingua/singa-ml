@@ -46,7 +46,7 @@ Singa is a project focused on sign language recognition using deep learning tech
 
 ### Recording your own dataset
 
-- If you want to add your own dataset, refer to the detailed instructions in [RECORD_DATASET.md](./tutorial/RECORD_DATASET.md).
+- If you want to add your own dataset, refer to the detailed instructions in [RECORDING-DATASET.md](./tutorial/RECORDING-DATASET.md).
 
 ### Additional Notes:
 
